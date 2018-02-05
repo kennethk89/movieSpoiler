@@ -13,7 +13,7 @@ let googleUrl = `https://www.google.ca/search?q=${movieName}`
 let url = `https://api.themoviedb.org/3/search/movie?api_key=${api}&query=${movieName}`
 
 
-if (!movieName || !waitTime || waitTime < 0) {
+if (movieName == null || waitTime == null || waitTime < 0) {
     console.log('Error, please enter movie title name and valid wait time')
 } else {
 
